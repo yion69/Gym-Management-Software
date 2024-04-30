@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEF6786D-A58B-44FD-8DBF-D40D7A1BDA11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GymManagementSystem</RootNamespace>
+    <AssemblyName>GymManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Krypton.Toolkit, Version=80.24.3.64, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Toolkit.80.24.3.64\lib\net472\Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminClassesControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminClassesControl.Designer.cs">
+      <DependentUpon>AdminClassesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEnrollmentControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEnrollmentControl.Designer.cs">
+      <DependentUpon>AdminEnrollmentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHomePage.Designer.cs">
+      <DependentUpon>AdminHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTrainerControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminTrainerControl.Designer.cs">
+      <DependentUpon>AdminTrainerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUserControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUserControl.Designer.cs">
+      <DependentUpon>AdminUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes.Designer.cs">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact.Designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment.Designer.cs">
+      <DependentUpon>Enrollment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileEdit.Designer.cs">
+      <DependentUpon>ProfileEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainer.Designer.cs">
+      <DependentUpon>Trainer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminClassesControl.resx">
+      <DependentUpon>AdminClassesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEnrollmentControl.resx">
+      <DependentUpon>AdminEnrollmentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHomePage.resx">
+      <DependentUpon>AdminHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTrainerControl.resx">
+      <DependentUpon>AdminTrainerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUserControl.resx">
+      <DependentUpon>AdminUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes.resx">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact.resx">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment.resx">
+      <DependentUpon>Enrollment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileEdit.resx">
+      <DependentUpon>ProfileEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trainer.resx">
+      <DependentUpon>Trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-regular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dumbbell-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-regular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hammer1-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headset %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\learn-zumba-dance-classes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\original_Default-image_0003_iStock-932334310_super.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-gym-weight-lifting-gym-equipment-workout-gear-fitn-art-installation-with-workout-equipment-and-access65e681ac5e5460.0943109317096052923864.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profilePlaceholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profilePlaceholder1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotate-right-solid %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people-doing-indoor-cycling.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\low-angle-view-unrecognizable-muscular-build-man-preparing-lifting-barbell-health-club.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym-with-indoor-cycling-equipment.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retweet-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userFormSymbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trainerFormSymbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classFormSymbol.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
